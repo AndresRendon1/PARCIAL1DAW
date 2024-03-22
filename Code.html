@@ -5,124 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parcial1DAW</title>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        flex-direction: column; /* Para alinear verticalmente */
-        background-color: #f0f0f0; /* Gris claro */
-    }
-
-    .keyboard {
-        display: grid;
-        grid-template-columns: repeat(3, 160px); /* Tamaño de los recuadros */
-        grid-gap: 20px; /* Espacio entre recuadros */
-    }
-
-    .key {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 160px; /* Tamaño de los recuadros */
-        height: 160px; /* Tamaño de los recuadros */
-        background-color: #fafafa; /* Fondo blanco */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 2px 2px 5px rgba(163, 165, 174, 0.5); /* Sombra suave */
-        overflow: hidden; /* Oculta el contenido que se desborda */
-        position: relative; /* Posicionamiento relativo para la línea de color */
-    }
-
-    /* Línea de color en la parte superior */
-    .key.up::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #ea5353; /* Color rojo */
-    }
-
-    /* Línea de color en la parte superior */
-    .key.left::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #62dada; /* Color cian */
-    }
-
-    /* Línea de color en la parte superior */
-    .key.down::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #fc9b1d; /* Color naranja */
-    }
-
-    /* Línea de color en la parte superior */
-    .key.right::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #4a9dfc; /* Color azul */
-    }
-
-    .up {
-        grid-column: 2;
-    }
-
-    .left {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .right {
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    .down {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    .key h2 {
-        margin: 0;
-        font-size: 14px; /* Tamaño de la fuente para los encabezados */
-    }
-
-    h1 {
-        font-size: 24px; /* Tamaño de la fuente para los encabezados */
-        margin-bottom: 20px;
-    }
-
-    .powered-by {
-        font-weight: bold;
-        font-size: 18px; /* Tamaño de la fuente */
-    }
-
-    .key p {
-        font-size: 12px; /* Tamaño de la fuente para los textos dentro de los recuadros */
-    }
-
-    .keyboard h1 {
-        font-size: 28px; /* Tamaño de la fuente para los encabezados */
-    }
-</style>
+<link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo -->
 </head>
 <body>
 <h1>Reliable, efficient delivery</h1>
@@ -152,6 +35,7 @@
 </div>
 </body>
 </html>
+
 
 
 
